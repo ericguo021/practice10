@@ -1,0 +1,153 @@
+/* main container */
+#container {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#sec1, #sec3{
+    border: 1px solid black;
+    height: 150px;
+    margin: 5px;
+} 
+
+#sec1 {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec1_div1 {
+    border: 2px solid black;
+    background-color: greenyellow;
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+}
+
+#sec1_div2 {
+    width: 100px;
+    margin: 10px;
+    font-size: x-large;
+}
+
+#sec3 {
+    background-color: blue;
+}
+
+/* the second row container with 3 items */
+header {
+    display:flex;
+    height: 50px;
+    flex-basis: auto;
+    margin-bottom: 10px;
+    margin-top:10px;
+    
+}
+/*first and third item in the main container*/
+
+.secLeft, .secRight {  
+    height: 50px;
+    width: 15%;
+}
+
+/* Among the second row container, the middle item is another nested container with 4 pink items */
+.secMiddle {
+    height: 50px;
+    width: 70%;
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+
+.secMiddle > div {
+    border: 1px solid black;
+    height: 50px;
+    background-color: pink;
+    width: 150px;
+   
+}
+
+.secRight {
+    display: flex;
+    justify-content: right;
+}
+
+#greenDot {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+
+
+#main {
+    display: flex;
+   
+    height: 150px;
+    margin: 5px;
+}
+
+
+
+#main div{
+    border: 2px soild black;
+    flex-basis: auto;
+
+}
+
+#div1 {
+    background-color: grey;
+    border: 3px soild black;
+    margin-right: 10px;
+    width: 20%;
+}
+
+#div2 {
+    background-color: mediumaquamarine;
+    border: 3px soild black;
+    margin-left: 10px;
+    width: 80%
+}
+
+
+/* footer */
+#sec3 {
+    display:flex;
+    align-items: center;
+}
+
+.footer_div1 {
+    width:25%;
+}
+
+.footer_div2 {
+    width:75%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer_div2 div{
+    background-color: aquamarine;
+    width:100px;
+    height:100px;
+    font-size: larger;
+    text-align: center;
+
+}
+
+#footer_div2_box01, #footer_div2_box02{
+    align-items: center;
+    line-height: 100px;
+
+}
+
+#footer_div2_box03{
+    align-items: center;
+    vertical-align: middle;
+
+}
